@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html>
+<style>
+#main {
+	position: relative;
+	height: 99vh;
+	width: 99vw;
+}
+#welcome {
+	position: absolute;
+	margin: auto;
+	height: 200px;
+	width: 400px;
+	top: 25vh; left: 0; right: 0;
+	text-align: center;
+}
+#flag {
+}
+</style>
 <body>
 <audio autoplay id="anthem">
 	<source src="Iceland.mp3" type="audio/mpeg">
 </audio>
-<h1>Welcome to PRIB.IS</h1>
+<div id="main">
+	<div id="welcome">
+		Welcome to PRIB.IS<br><br>
+		That's right, the HOME PAGE of Carter Bruise Pribis.<br><br>
+		Brought to you by the gracious, glourious, and green nation of Iceland.<br><br>
+		<img id="flag" src="flag.gif">
+	</div>
+</div>
 </body>
 <script>
 var anthme = document.getElementById("anthem")
-anthem.volume = .5;
+anthem.volume = .3;
 </script>
 </html>
